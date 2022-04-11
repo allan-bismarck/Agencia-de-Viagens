@@ -1,0 +1,664 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #F1F1F1;
+}
+
+#cinque_terre {
+    background-image: url(imagens/cinqueterre.jpg);
+    background-size: 100%;
+}
+
+#new_york {
+    background-image: url(imagens/newyork.jpg);
+    background-size: 100%;
+}
+
+#san_francisco {
+    background-image: url(imagens/sanfran.jpg);
+    background-size: 100%;
+}
+
+#pisa {
+    background-image: url(imagens/pisa.jpg);
+    background-size: 100%;
+}
+
+#paris {
+    background-image: url(imagens/paris.jpg);
+    background-size: 100%;
+}
+
+header {
+    width: 100%;
+    min-width: 1044px;
+}
+
+#up_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#up_header i {
+    padding: 10px;
+    width: 15px;
+}
+
+#up_header > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#up_header > div > p {
+    padding: 10px 0px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.orange {
+    color: #f44336;
+    justify-self: start;
+}
+
+#up_header> i:not(.orange) {
+    cursor: pointer;
+}
+
+#main_header {
+    background-image: url(imagens/london.jpg);
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#box {
+    width: 65%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+nav>a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 8px;
+    width: 100%;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav>a:hover {
+    background-color: #f44336;
+}
+
+nav>a>i {
+    padding: 5px 15px 5px 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 25px 15px;
+}
+
+form>p {
+    font-size: 28px;
+    padding: 10px 0px 15px 0px;
+}
+
+label {
+    padding-bottom: 4px;
+}
+
+form>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+form>div>div {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.text, .submit {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.text::placeholder {
+    color: rgb(143, 143, 143);
+}
+
+form>a>input {
+    width: 180px;
+    background-color: #616161;
+    border: none;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+form>a>input:hover {
+    background-color: #3b3b3b;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1024px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+main section {
+    width: 100%;
+    padding-top: 15px;
+}
+
+#section_one>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 380px;
+}
+
+.imagem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    cursor: pointer;
+}
+
+#cinque_terre {
+    width: 50%;
+    height: 100%;
+    margin: 5px 5px 5px 0px;
+}
+
+#section_one>div>div:not(#cinque_terre) {
+    width: 24%;
+    height: 47.2%;
+    margin: 5px;
+}
+
+.img_text {
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 300;
+    padding: 10px 0px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px 0px;
+}
+
+#section_one span {
+    font-weight: bold;
+}
+
+#section_two>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#section_two>div>div {
+    width: 49.5%;
+}
+
+#section_two>div>div>div {
+    width: 100%;
+    background-color: white;
+    margin-top: -5px;
+    padding: 10px 0px 0px 0px;
+}
+
+#section_two img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.section_two_content {
+    padding: 8px 15px;
+}
+
+h3.section_two_content {
+    color: rgb(145, 145, 145);
+    font-size: 15px;
+}
+
+p.section_two_content {
+    font-size: 15px;
+}
+
+#p_footer {
+    margin: 0px 0px 0px 20px;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+#section_tree {
+    margin-top: 30px;
+}
+
+#section_tree, #section_tree form {
+    background-color: #606060;
+}
+
+#section_tree form {
+    padding: 10px 20px 20px 20px;
+}
+
+#section_tree h1, #section_tree h3, #section_tree label, #section_tree .submit {
+    color: white;
+}
+
+#section_tree h1 {
+    font-size: 26px;
+    padding-left: 20px;
+}
+
+#section_tree h3 {
+    padding-left: 20px;
+}
+
+#section_tree label {
+    font-size: 15px;
+}
+
+#section_tree .text {
+    border: none;
+}
+
+#section_tree .text::placeholder {
+    color: rgb(194, 194, 194);
+}
+
+#section_tree .submit {
+    background-color: #F38981;
+    border: none;
+    width: 10%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#section_tree .submit:hover {
+    background-color: #c05952;
+}
+
+footer {
+    width: 1024px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+footer h1 {
+    font-size: 40px;
+}
+
+footer h3 {
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+footer>section>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer>section>div>p {
+    padding: 5px 0px 5px 20px;
+    font-size: 18px;
+}
+
+.fa-location-dot {
+    padding-right: 3.5px;
+}
+
+footer>section {
+    width: 1024px;
+}
+
+footer form {
+    width: 100%;
+    background-color: #F1F1F1;
+    padding: 5px 0px 0px 0px;
+    margin-bottom: 35px;
+}
+
+footer .text {
+    margin: 10px 0px 10px 0px;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 18px 10px;
+}
+
+footer .submit {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 170px;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer .submit:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+footer>section>p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    font-size: 20px;
+    color: rgb(109, 109, 109);
+}
+
+#block_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0px;
+}
+
+#block_icons > a > i {
+    padding: 5px;
+    color: rgb(66, 66, 66);
+    cursor: pointer;
+}
+
+#block_icons > a > i:hover {
+    padding: 5px;
+    color: rgb(172, 172, 172);
+    cursor: pointer;
+}
+
+#last_line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#last_line p {
+    font-size: 17px;
+    color: rgb(109, 109, 109);
+    padding: 10px 0px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: rgb(109, 109, 109);
+}
+
+@media screen and (max-width: 450px) {
+
+    header {
+        width: 100%;
+        min-width: 1084px;
+    }
+
+    #up_header > div > p {
+        font-size: 65px;
+        padding: 20px 0px;
+    }
+    
+    nav > a {
+        font-size: 40px;
+        padding: 30px 0px;
+    }
+
+    #main_header {
+        background-image: none;
+        height: 100%;
+    }
+
+    #box {
+        width: 100%;
+    }
+
+    form {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    form > div {
+        flex-direction: column;
+    }
+
+    form > div > div {
+        width: 100%;
+        font-size: 50px;
+    }
+    
+    form > p {
+        font-size: 65px;
+        padding: 10px 15px 25px 0px;
+    } 
+    
+    label {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    
+    .text, .submit {
+        padding: 35px 15px;
+        font-size: 42px;
+    }
+
+    form > a {
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+    
+    form > a > input {
+        width: 480px;
+    }
+
+    main {
+        padding: 0px 30px;
+    }
+    
+    main section {
+        padding-top: 80px;
+    }
+
+    #section_one > div {
+        height: 3850px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    #cinque_terre {
+        width: 100%;
+        height: 100%;
+        margin: 15px 0px;
+    }
+    
+    #section_one>div>div:not(#cinque_terre) {
+        width: 100%;
+        height: 100%;
+        margin: 15px 0px;
+    }
+    
+    .img_text {
+        font-size: 40px;
+        padding: 35px;
+    }
+    
+    h1 {
+        font-size: 50px;
+        padding: 10px 0px;
+    }
+    
+    h3 {
+        font-size: 35px;
+        padding: 20px 0px;
+    }
+
+    #section_two h1 {
+        font-size: 65px;
+    }
+
+    #section_two > h3 {
+        padding: 50px 0px;
+    }
+
+    #section_two>div {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #section_two>div>div {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .section_two_content {
+        padding: 25px 25px;
+    }
+    
+    h3.section_two_content {
+        font-size: 40px;
+    }
+    
+    p.section_two_content {
+        font-size: 40px;
+    }
+    
+    #p_footer {
+        font-size: 40px;
+        padding-bottom: 40px;
+    }
+    
+    #section_tree form {
+        padding: 10px 30px 30px 30px;
+    }
+    
+    #section_tree h1 {
+        font-size: 80px;
+        padding-left: 30px;
+    }
+    
+    #section_tree h3 {
+        padding: 30px 0px 30px 30px;
+        font-size: 42px;
+    }
+    
+    #section_tree label {
+        font-size: 35px;
+        font-weight: 500;
+    }
+    
+    #section_tree .submit {
+        width: 250px;
+        font-size: 35px;
+        margin: 40px 0px 10px 0px;
+        padding: 25px;
+    }
+
+    footer {
+        padding: 30px 35px;
+    }
+    
+    footer h1 {
+        font-size: 70px;
+    }
+    
+    footer h3 {
+        padding-bottom: 20px;
+        font-size: 35px;
+    }
+    
+    footer > section > div > p {
+        padding: 5px 0px 5px 40px;
+        font-size: 35px;
+    }
+    
+    footer form {
+        padding: 20px 0px 0px 0px;
+        margin-bottom: 35px;
+    }
+    
+    footer .text {
+        margin: 15px 0px 15px 0px;
+        padding: 35px 20px;
+    }
+    
+    footer .submit {
+        width: 370px;
+        padding: 32px;
+        margin-top: 15px;
+        font-size: 35px;
+    }
+    
+    footer > section > p {
+        padding: 10px 0px;
+        font-size: 40px;
+    }
+    
+    #block_icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 35px 0px;
+    }
+    
+    #last_line > p {
+        font-size: 35px;
+        padding: 10px 0px;
+    }
+}
