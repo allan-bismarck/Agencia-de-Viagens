@@ -17,32 +17,32 @@ body {
 
 #cinque_terre {
     background-image: url(imagens/cinqueterre.jpg);
-    background-size: 100%;
+    background-size: cover;
 }
 
 #new_york {
     background-image: url(imagens/newyork.jpg);
-    background-size: 100%;
+    background-size: cover;
 }
 
 #san_francisco {
     background-image: url(imagens/sanfran.jpg);
-    background-size: 100%;
+    background-size: cover;
 }
 
 #pisa {
     background-image: url(imagens/pisa.jpg);
-    background-size: 100%;
+    background-size: cover;
 }
 
 #paris {
     background-image: url(imagens/paris.jpg);
-    background-size: 100%;
+    background-size: cover;
 }
 
 header {
     width: 100%;
-    min-width: 1044px;
+    /* min-width: 1044px; */
 }
 
 #up_header {
@@ -177,9 +177,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1024px;
+    max-width: 1024px;
     margin: 0px auto;
-    padding: 0px 10px;
+    padding: 0px 30px;
 }
 
 main section {
@@ -187,16 +187,17 @@ main section {
     padding-top: 15px;
 }
 
-#section_one>div {
+#section_one > div {
+    display: grid;
+    grid-template-areas: "main_image main_image image image"
+                         "main_image main_image image image";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 380px;
+    min-height: 420px;
 }
 
 .imagem {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -204,15 +205,13 @@ main section {
 }
 
 #cinque_terre {
-    width: 50%;
-    height: 100%;
-    margin: 5px 5px 5px 0px;
+    grid-area: main_image;
+    min-width: 100%;
 }
 
-#section_one>div>div:not(#cinque_terre) {
-    width: 24%;
-    height: 47.2%;
-    margin: 5px;
+.imagem div:not(#cinque_terre) {
+    grid-area: image;
+    max-width: 100%;
 }
 
 .img_text {
@@ -220,6 +219,7 @@ main section {
     font-size: 18px;
     padding: 12px;
     font-weight: 300;
+    justify-self: end;
 }
 
 h1 {
@@ -239,13 +239,13 @@ h3 {
 }
 
 #section_two>div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
 }
 
 #section_two>div>div {
-    width: 49.5%;
+    width: 100%;
 }
 
 #section_two>div>div>div {
@@ -329,13 +329,17 @@ p.section_two_content {
 }
 
 footer {
-    width: 1024px;
+    max-width: 1024px;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px 10px;
+    padding: 30px;
+}
+
+footer>section {
+    width: 100%;
 }
 
 footer h1 {
@@ -360,10 +364,6 @@ footer>section>div>p {
 
 .fa-location-dot {
     padding-right: 3.5px;
-}
-
-footer>section {
-    width: 1024px;
 }
 
 footer form {
@@ -441,21 +441,27 @@ footer a {
     color: rgb(109, 109, 109);
 }
 
+@media screen and (max-width: 768px) {
+    #section_one > div {
+        min-height: 230px;
+    }
+}
+
 @media screen and (max-width: 450px) {
 
     header {
-        width: 100%;
-        min-width: 1084px;
+        padding: 0px;
+        width: 110%;
     }
 
     #up_header > div > p {
-        font-size: 65px;
+        font-size: 35px;
         padding: 20px 0px;
     }
     
     nav > a {
-        font-size: 40px;
-        padding: 30px 0px;
+        font-size: 20px;
+        padding: 15px 0px;
     }
 
     #main_header {
@@ -468,8 +474,8 @@ footer a {
     }
 
     form {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     form > div {
@@ -478,109 +484,102 @@ footer a {
 
     form > div > div {
         width: 100%;
-        font-size: 50px;
+        font-size: 30px;
     }
     
     form > p {
-        font-size: 65px;
+        font-size: 30px;
         padding: 10px 15px 25px 0px;
     } 
     
     label {
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        font-size: 20px;
     }
     
     .text, .submit {
-        padding: 35px 15px;
-        font-size: 42px;
+        padding: 15px 5px;
+        font-size: 20px;
     }
 
     form > a {
-        padding-top: 30px;
-        padding-bottom: 70px;
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
     
     form > a > input {
-        width: 480px;
+        width: 250px;
     }
 
     main {
-        padding: 0px 30px;
+        width: 100%;
+        padding: 0px 20px;
     }
     
     main section {
-        padding-top: 80px;
+        padding-top: 60px;
     }
 
     #section_one > div {
-        height: 3850px;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         flex-wrap: nowrap;
     }
 
-    #cinque_terre {
+    .imagem {
         width: 100%;
-        height: 100%;
-        margin: 15px 0px;
+        height: 370px;
     }
-    
-    #section_one>div>div:not(#cinque_terre) {
+
+    #section_one {
         width: 100%;
-        height: 100%;
-        margin: 15px 0px;
     }
     
     .img_text {
-        font-size: 40px;
-        padding: 35px;
+        font-size: 25px;
+        padding: 15px;
     }
     
     h1 {
-        font-size: 50px;
-        padding: 10px 0px;
+        font-size: 25px;
+        padding: 0px;
     }
     
     h3 {
-        font-size: 35px;
+        font-size: 18px;
         padding: 20px 0px;
     }
 
-    #section_two h1 {
-        font-size: 65px;
-    }
-
-    #section_two > h3 {
-        padding: 50px 0px;
-    }
-
-    #section_two>div {
+    #section_two > div {
+        display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     
     #section_two>div>div {
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 5px;
     }
     
     .section_two_content {
-        padding: 25px 25px;
+        padding: 15px;
     }
     
     h3.section_two_content {
-        font-size: 40px;
+        font-size: 18px;
     }
     
     p.section_two_content {
-        font-size: 40px;
+        font-size: 18px;
     }
     
     #p_footer {
-        font-size: 40px;
-        padding-bottom: 40px;
+        font-size: 18px;
+        padding-bottom: 30px;
     }
     
     #section_tree form {
@@ -588,43 +587,52 @@ footer a {
     }
     
     #section_tree h1 {
-        font-size: 80px;
-        padding-left: 30px;
+        font-size: 30px;
+        padding-left: 15px;
     }
     
     #section_tree h3 {
-        padding: 30px 0px 30px 30px;
-        font-size: 42px;
+        padding: 20px 0px 20px 15px;
+        font-size: 18px;
+    }
+
+    #section_tree > form {
+        padding-left: 15px;
     }
     
     #section_tree label {
-        font-size: 35px;
+        font-size: 20px;
         font-weight: 500;
     }
     
     #section_tree .submit {
-        width: 250px;
-        font-size: 35px;
-        margin: 40px 0px 10px 0px;
-        padding: 25px;
+        width: 140px;
+        font-size: 20px;
+        margin: 20px 0px 0px 0px;
+        padding: 15px;
     }
 
     footer {
-        padding: 30px 35px;
+        width: 100%;
+        padding: 30px 20px;
     }
     
     footer h1 {
-        font-size: 70px;
+        font-size: 40px;
     }
     
     footer h3 {
         padding-bottom: 20px;
-        font-size: 35px;
+        font-size: 18px;
+    }
+
+    footer > section {
+        width: 100%;
     }
     
     footer > section > div > p {
-        padding: 5px 0px 5px 40px;
-        font-size: 35px;
+        padding: 5px 0px 5px 20px;
+        font-size: 18px;
     }
     
     footer form {
@@ -633,20 +641,21 @@ footer a {
     }
     
     footer .text {
-        margin: 15px 0px 15px 0px;
-        padding: 35px 20px;
+        margin: 8px 0px;
+        padding: 15px 10px;
+        font-size: 18px;
     }
     
     footer .submit {
-        width: 370px;
-        padding: 32px;
-        margin-top: 15px;
-        font-size: 35px;
+        width: 190px;
+        padding: 16px;
+        margin-top: 5px;
+        font-size: 18px;
     }
     
     footer > section > p {
-        padding: 10px 0px;
-        font-size: 40px;
+        padding: 0px;
+        font-size: 25px;
     }
     
     #block_icons {
@@ -654,11 +663,144 @@ footer a {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 35px 0px;
+        padding: 25px 0px;
     }
     
     #last_line > p {
-        font-size: 35px;
+        font-size: 20px;
         padding: 10px 0px;
     }
+}
+
+@media screen and (max-width: 320px) {
+
+    #up_header > div > p {
+        font-size: 30px;
+    }
+    
+    nav > a {
+        font-size: 18px;
+    }
+
+    form {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    form > div > div {
+        width: 100%;
+        font-size: 30px;
+    }
+    
+    form > p {
+        font-size: 27px;
+        padding: 10px 15px 25px 0px;
+    } 
+    
+    label {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: 17px;
+    }
+    
+    .text, .submit {
+        padding: 12px 5px;
+        font-size: 17px;
+    }
+
+    form > a {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    
+    form > a > input {
+        width: 200px;
+    }
+
+    main {
+        padding: 0px 15px;
+    }
+
+    .imagem {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .img_text {
+        font-size: 22px;
+    }
+    
+    #section_tree form {
+        padding: 10px 15px 20px 15px;
+    }
+    
+    #section_tree label {
+        font-size: 18px;
+    }
+
+    #section_tree .text {
+        padding: 15px 10px;
+    }
+    
+    #section_tree .submit {
+        width: 130px;
+        font-size: 20px;
+        margin: 20px 0px 0px 0px;
+        padding: 15px 10px;
+    }
+
+    footer {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    
+    footer h1 {
+        font-size: 40px;
+    }
+    
+    footer h3 {
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+
+    footer > section {
+        width: 100%;
+    }
+    
+    footer > section > div > p {
+        padding: 5px 0px 5px 20px;
+        font-size: 18px;
+    }
+    
+    footer form {
+        padding: 20px 0px 0px 0px;
+        margin-bottom: 35px;
+    }
+    
+    footer .text {
+        margin: 8px 0px;
+        padding: 15px 10px;
+        font-size: 18px;
+    }
+    
+    footer .submit {
+        width: 175px;
+        padding: 16px;
+        margin-top: 5px;
+        font-size: 18px;
+    }
+    
+    footer > section > p {
+        padding: 0px;
+        font-size: 20px;
+    }
+    
+    #block_icons {
+        padding: 20px 0px;
+    }
+    
+    #last_line > p {
+        font-size: 18px;
+    }
+
 }
