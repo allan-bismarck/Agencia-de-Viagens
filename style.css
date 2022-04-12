@@ -50,9 +50,10 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: white;
+    padding: 0px 15px 0px 20px;
 }
 
-#up_header i {
+#up_header i .orange {
     padding: 10px;
     width: 15px;
 }
