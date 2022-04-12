@@ -8,7 +8,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    /* border-style: solid; */
     font-family: 'Raleway', sans-serif;
 }
 
@@ -77,6 +76,7 @@ header {
 
 #up_header> i:not(.orange) {
     cursor: pointer;
+    color: rgb(134, 134, 134);
 }
 
 #main_header {
@@ -470,6 +470,10 @@ footer a {
         font-size: 35px;
         padding: 20px 0px;
     }
+
+    #up_header i {
+        transform: scale(1.8);
+    }
     
     nav > a {
         font-size: 20px;
@@ -687,6 +691,10 @@ footer a {
     #up_header > div > p {
         font-size: 30px;
     }
+
+    #up_header i {
+        transform: scale(1.5);
+    }
     
     nav > a {
         font-size: 18px;
@@ -806,6 +814,11 @@ footer a {
     
     #block_icons {
         padding: 20px 0px;
+    }
+
+    #block_icons > a > i {
+        padding: 0px 1px;
+        transform: scale(0.8);
     }
     
     #last_line > p {
