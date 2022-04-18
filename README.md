@@ -1,6 +1,6 @@
 <a href="README_portuguese.md" target="_blank">Leia esta página em português<a/> 
 
-# Agência-de-Viagens
+# Travel Agency
 ### Link: https://allanbismarck123.github.io/Agencia-de-Viagens/
 
 ## ✨ Description
@@ -13,4 +13,5 @@
   <img align="center" alt="Allan-HTML" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="Allan-CSS" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
   <img align="center" alt="Allan-Js" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  
 </div>
