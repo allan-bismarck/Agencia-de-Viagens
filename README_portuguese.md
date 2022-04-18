@@ -1,4 +1,4 @@
-<a href="README.md" target="_blank">Read this page in portuguese<a/> 
+<a href="README.md" target="_blank">Read this page in english<a/> 
 
 # Agência-de-Viagens
 ### Link: https://allanbismarck123.github.io/Agencia-de-Viagens/
